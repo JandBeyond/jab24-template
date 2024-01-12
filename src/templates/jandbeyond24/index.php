@@ -112,7 +112,7 @@ if (isset($this->_script['text/javascript']))
             <span class="footer__copyrightnote">
                 Designed by Until Sunday.<br/> Developed by djumla GmbH
 <br/>
-                2015-2020 © JandBeyond. All rights reserved.
+                2015-2024 © JandBeyond. All rights reserved.
             </span>
         </div>
     </footer>
