@@ -1,7 +1,7 @@
 @include critical(true) {
   .header__introarea {
     margin-top: 70px;
-    min-height: calc(100vh - 70px);
+    /* min-height: calc(100vh - 70px); */
     margin-bottom: 0;
     padding: 1.5rem;
     box-sizing: border-box;

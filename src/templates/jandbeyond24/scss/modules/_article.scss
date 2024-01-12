@@ -1,5 +1,5 @@
 @include critical(true) {
-  section.article {
+  .com-content-article__body {
     display: flex !important;
     display: -ms-flexbox !important;
     flex-direction: column;

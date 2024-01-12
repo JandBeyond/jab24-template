@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension type="template" version="3.8.0" method="upgrade">
-	<name>J and Beyond 2020</name>
-	<version>1.0.0</version>
-	<description>J and Beyond 2020 Joomla-Template</description>
+	<name>J and Beyond 2024</name>
+	<version>5.0.0</version>
+	<description>J and Beyond 2024 Joomla-Template</description>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<author>djumla GmbH</author>
-	<authoremail>info@djumla.de</authoremail>
-	<copyright>Copyright (C) 2020 djumla GmbH. All rights reserved.</copyright>
-	<creationDate>11-Feb-2020</creationDate>
+	<author>Jab e.V.</author>
+	<authoremail>contact@jabev.de</authoremail>
+	<copyright>Jandbeyond</copyright>
+	<creationDate>1-Jan-2024</creationDate>
 	<files>
 		<folder>css</folder>
 		<folder>img</folder>

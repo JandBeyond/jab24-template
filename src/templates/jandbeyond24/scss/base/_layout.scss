@@ -79,4 +79,15 @@
       display: none;
     }
   }
+
+  section.content__top {
+    margin-top: 100px;
+    margin-left: 12rem;
+
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
 }
