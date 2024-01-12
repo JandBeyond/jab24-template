@@ -63,7 +63,7 @@ $max_font: 18px;
     color: $jab_tertiary;
   }
   // Headings
-  h1 {
+  h1,.h1 {
     color: $jab_primary;
     font-weight: 200;
     text-transform: uppercase;
@@ -305,6 +305,12 @@ $max_font: 18px;
       }
     }
   }
+  //RS Styles
+  .formResponsive input[type="radio"],
+  .formResponsive input[type="checkbox"] {
+    width: auto;
+  }
+
 }
 ::placeholder {
   color: #8888EC;
