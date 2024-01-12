@@ -1,0 +1,61 @@
+@include critical(true) {
+  .sponsor {
+    text-align: center;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-content: center;
+    -ms-flex-line-pack: center;
+
+    .sponsor__title,
+    .sponsorcontainer__title {
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+    }
+    .sponsor__title {
+      font-size: .75rem;
+      margin-bottom: .25rem;
+      display: block;
+      width: 100%;
+    }
+    .sponsorcontainer__title {
+      font-size: .85rem;
+      font-weight: 600;
+    }
+  }
+  .sponsor--placeholder {
+    color: $jab_primary;
+    height: 80px;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -ms-flex-pack: center;
+    position: relative;
+    &:after {
+      background: $jab_secondary;
+      height: 80px;
+      width: 80px;
+      content: " ";
+      display: block;
+      z-index: -1;
+      border-radius: 50%;
+      position: absolute;
+      left: calc(50% - 40px);
+      top: 0;
+    }
+  }
+  .sponsorarea {
+    padding: 6rem 0;
+    .grid {
+      row-gap: 4rem;
+    }
+  }
+}

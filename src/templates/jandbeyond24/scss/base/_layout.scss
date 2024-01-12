@@ -1,0 +1,82 @@
+@include critical(true) {
+  body,html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  main {
+    padding: 2rem;
+    @include lg {
+    }
+    @include xxl {
+      padding: 15px calc((100vw - (#{$screen-xxl-min} - 80px)) / 2);
+    }
+  }
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include lg {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    &.bg--primary,
+    &.bg--secondary,
+    &.bg--muted {
+      padding: 2rem 1rem;
+      @include md {
+        padding: 4rem 2rem;
+      }
+      @include lg {
+        padding: 4rem;
+      }
+    }
+  }
+  // Utility-Classes (Layout)
+  .min-md {
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+  .min-lg {
+    display: none;
+    @include lg {
+      display: block;
+    }
+  }
+  .min-xl {
+    display: none;
+    @include xl {
+      display: block;
+    }
+  }
+  .min-xxl {
+    display: none;
+    @include xxl {
+      display: block;
+    }
+  }
+  .max-sm {
+    display: block;
+    @include md {
+      display: none;
+    }
+  }
+  .max-md {
+    display: block;
+    @include lg {
+      display: none;
+    }
+  }
+  .max-lg {
+    display: block;
+    @include xl {
+      display: none;
+    }
+  }
+  .max-xl {
+    display: block;
+    @include xxl {
+      display: none;
+    }
+  }
+}

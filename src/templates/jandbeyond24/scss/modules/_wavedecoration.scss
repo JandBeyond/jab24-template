@@ -1,0 +1,10 @@
+@include critical(true) {
+  .wavedecoration {
+    height: 460px;
+    background-image: url('/templates/jandbeyond20/img/bg_waves--long.png');
+    background-size: cover;
+    width: 100vw;
+    background-repeat: repeat-x;
+    background-position: 0% 0%;
+  }
+}

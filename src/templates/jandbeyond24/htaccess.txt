@@ -1,0 +1,14 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 week 1 hour"
+  ExpiresByType image/gif "access plus 1 week 1 hour"
+  ExpiresByType image/jpg "access plus 1 week 1 hour"
+  ExpiresByType image/jpeg "access plus 1 week 1 hour"
+  ExpiresByType image/png "access plus 1 week 1 hour"
+  ExpiresByType text/css "access plus 1 week 1 hour"
+  ExpiresByType image/svg+xml "access plus 1 week 1 hour"
+  ExpiresByType application/javascript "access plus 1 week 1 hour"
+</IfModule>
+
+
+AddOutputFilterByType DEFLATE text/css text/javascript application/javascript image/svg+xml

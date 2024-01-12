@@ -1,0 +1,133 @@
+@include critical(false) {
+  footer {
+    .footer__top {
+      background: #E8E8FD;
+      padding: 4rem 2rem;
+      position: relative;
+      :focus {
+        outline: 3px dotted $jab_primary !important; //add general focus-style for clickable elements (a11y)
+      }
+      @include md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        .footer__latestnews {
+          grid-column: 1 / 3;
+        }
+      }
+      @include lg {
+        margin-top: 6rem;
+        grid-template-columns: 1.5fr 1fr;
+        padding-bottom: 0;
+        .footer__latestnews {
+          grid-column: 1 / 2;
+        }
+        .footer__newsletter,
+        .footer__twitter {
+          grid-column: 2 / 3;
+          transform: translateY(-9rem);
+        }
+      }
+      @include xxl {
+        padding: 4rem calc((100vw - (#{$screen-xxl-min} - 80px)) / 2) 0 calc((100vw - (#{$screen-xxl-min} - 80px)) / 2);
+      }
+      &:after {
+        display: block;
+        content: " ";
+        height: 29px;
+        width: 100%;
+        background-color: transparent;
+        background-image: url('/templates/jandbeyond20/img/wave--light.svg');
+        background-size: contain;
+        background-repeat: repeat-x;
+        position: absolute;
+        left: 0;
+        bottom: calc(100% - 19px);
+        transform: rotate(180deg);
+        z-index: -1;
+      }
+      .footer__latestnews {
+        h3 {
+          margin-top: 0;
+        }
+        ul.lnd_latestnews {
+          padding: 0;
+          margin: 2rem 0;
+          li {
+            margin: 1.5rem 0;
+            display: block;
+            width: 100%;
+            a {
+              display: block;
+              width: 100%;
+              font-size: 1.25rem;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .wavedecoration {
+      background-color: #E8E8FD;
+      position: relative;
+      z-index: -1;
+      background-image: url('/templates/jandbeyond20/img/bg_waves_ship--long.png');
+      background-size: cover;
+    }
+    .footer__bar {
+      background: $jab_primary;
+      color: #fff;
+      padding: 2rem;
+      position: relative;
+      @include xxl {
+        padding: 2rem calc((100vw - (#{$screen-xxl-min} - 80px)) / 2);
+      }
+      &:after {
+        display: block;
+        content: " ";
+        height: 56px;
+        width: 100%;
+        background-color: transparent;
+        background-image: url('/templates/jandbeyond20/img/wave.svg');
+        background-size: contain;
+        background-repeat: repeat-x;
+        position: absolute;
+        left: 0;
+        bottom: calc(100% - 19px);
+        transform: rotate(180deg);
+      }
+      .footer__navigation {
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            margin: 1.5rem 0;
+            a {
+              text-transform: uppercase;
+              font-weight: 600;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+          @include md {
+            display: flex;
+            display: -ms-flexbox;
+            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            li {
+              width: auto;
+              display: block;
+              margin: 1rem 1rem 1rem 0;
+            }
+          }
+        }
+      }
+      .footer__copyrightnote {
+        font-size: .8rem;
+      }
+      a {
+        color: $jab_secondary;
+      }
+    }
+  }
+}

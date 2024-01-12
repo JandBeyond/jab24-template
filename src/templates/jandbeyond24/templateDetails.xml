@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension type="template" version="3.8.0" method="upgrade">
+	<name>J and Beyond 2020</name>
+	<version>1.0.0</version>
+	<description>J and Beyond 2020 Joomla-Template</description>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<author>djumla GmbH</author>
+	<authoremail>info@djumla.de</authoremail>
+	<copyright>Copyright (C) 2020 djumla GmbH. All rights reserved.</copyright>
+	<creationDate>11-Feb-2020</creationDate>
+	<files>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+		<folder>font</folder>
+		<folder>html</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>homeicon192.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+	<positions>
+		<position>headerbar__mainnavigation</position>
+		<position>header__introareacontainer</position>
+		<position>content__top</position>
+		<position>content__bottom</position>
+		<position>footer__latestnews</position>
+		<position>footer__newsletter</position>
+		<position>footer__twitter</position>
+		<position>footerbar__navigation</position>
+	</positions>
+</extension>

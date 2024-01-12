@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-ELEMENTS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="JAB20-UI-ELEMENTS" transform="translate(-660.000000, -9478.000000)" stroke="#1B21F4" stroke-width="1.5">
+            <polyline id="Line" points="661.5 9479.5 666 9484 670.5 9479.5"></polyline>
+        </g>
+    </g>
+</svg>

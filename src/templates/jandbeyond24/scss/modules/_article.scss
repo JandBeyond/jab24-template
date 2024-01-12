@@ -1,0 +1,245 @@
+@include critical(true) {
+  section.article {
+    display: flex !important;
+    display: -ms-flexbox !important;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    max-width: 1280px;
+    margin: 4rem auto;
+    @include md {
+      flex-direction: row;
+      -ms-flex-direction: row;
+      position: relative;
+      align-items: flex-start;
+      -ms-flex-align: start;
+      justify-content: space-between;
+      -ms-flex-pack: justify;
+      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      .article__image {
+        width: 50%;
+        height: auto;
+        img {
+          max-width: 100%;
+        }
+      }
+      .article__textarea {
+        width: 80%;
+        margin-left: 20%;
+      }
+      .article__ctanote--circle {
+        position: absolute !important;
+        left: 60%;
+        top: 25%;
+      }
+      .article__ctanote--rect {
+        position: absolute !important;
+        left: 50%;
+        bottom: 35%;
+      }
+    }
+    @include lg {
+      .article__textarea {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .article__ctanote--circle {
+        left: calc(50% - 280px);
+        top: 55%;
+      }
+      .article__ctanote--rect {
+        position: absolute !important;
+        left: 40%;
+        bottom: auto;
+        top: 5%;
+      }
+    }
+    @include xl {
+      .article__ctanote--rect {
+        top: -5%;
+      }
+    }
+    &.article--imageright {
+      .article__image {
+        order: 3;
+        transform: translateX(2rem);
+      }
+      .article__ctanote {
+        order: 2;
+        transform: translateY(4rem);
+      }
+      .article__textarea {
+        order: 1;
+        position: relative;
+        padding-bottom: 4rem;
+        &:before {
+          background: #E8E8FD;
+          width: calc(100% + 4rem);
+          position: absolute;
+          left: -2rem;
+          height: calc(100% - 10rem);
+          bottom: 0;
+          content: " ";
+          z-index: -1;
+        }
+        &:after {
+          display: block;
+          content: " ";
+          height: 29px;
+          width: calc(100% + 4rem);
+          left: -2rem;
+          background-color: transparent;
+          background-image: url('/templates/jandbeyond20/img/wave--light.svg');
+          background-size: contain;
+          background-repeat: repeat-x;
+          position: absolute;
+          top: calc(100% - 19px);
+        }
+      }
+      @include md {
+        .article__textarea {
+          margin-left: 0;
+          margin-right: 20%;
+        }
+      }
+      @include lg {
+        .article__textarea {
+          margin-right: 0;
+          width: 45%;
+          position: relative;
+        }
+      }
+    }
+    .article__image {
+      width: calc(100% + 3rem);
+      transform: translateX(-2rem);
+      display: block;
+      height: auto;
+      order: 1;
+    }
+    .article__textarea {
+      order: 3;
+      .textarea__heading {
+        padding-right: 3rem;
+      }
+      .textarea__contentcontainer {
+        padding-left: 3rem;
+      }
+    }
+    .article__ctanote {
+      order: 2;
+      transform: translateY(-2rem);
+      background: $jab_secondary;
+      text-align: center;
+      color: $jab_primary;
+      width: calc(100vw - 8rem);
+      height: calc(100vw - 8rem);
+      max-width: 280px;
+      max-height: 280px;
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      justify-content: center;
+      -ms-flex-pack: justify;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+      .ctanote__heading {
+        color: $jab_primary;
+        text-transform: uppercase;
+        font-size: 1.65rem;
+        line-height: 2rem;
+      }
+      &--circle {
+        border-radius: 50%;
+        padding: 1rem 2rem;
+        .ctanote__heading {
+          margin: 0;
+          transform: translateY(-1rem);
+          &:before {
+            height: 46px;
+            display: block;
+            width: 31px;
+            background-image: url('/templates/jandbeyond20/img/drop.svg');
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto 1rem auto;
+            content:" ";
+          }
+        }
+      }
+      &--rect {
+        position: relative;
+        background: transparent;
+        padding: 2rem;
+        &:after {
+          position: absolute;
+          left: 1rem;
+          top: 1rem;
+          width: calc(100% - 2rem);
+          height: calc(100% - 2rem);
+          display: block;
+          background: $jab_secondary;
+          z-index: -1;
+          content: " ";
+          transform: rotate(45deg);
+          transform-origin: center center;
+        }
+        .ctanote__heading {
+          margin: 0;
+          transform: translateY(-2rem);
+          &:before {
+            height: 52px;
+            display: block;
+            width: 36px;
+            background-image: url('/templates/jandbeyond20/img/flame.svg');
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto 1rem auto;
+            content:" ";
+          }
+        }
+      }
+    }
+  }
+  // Individual Positioning and Sizing for each Article-Image regarding the Screendesigns
+  #pool-party {
+    width: 170%;
+    transform: translateX(-40%);
+    @include md {
+      width: 80%;
+      transform: translateX(-7%);
+    }
+    @include lg {
+      width: 50%;
+    }
+  }
+  #pool-ideas {
+    width: 170%;
+    transform: translateX(-35%);
+    @include md {
+      width: 120%;
+      transform: translateX(5%);
+    }
+    @include lg {
+      width: 55%;
+      transform: translate3D(5%, 70%, 0);
+    }
+    @include xl {
+      transform: translate3D(5%, 40%, 0);
+    }
+  }
+  #oriental-nights {
+    width: 170%;
+    transform: translateX(-15%);
+    @include md {
+      width: 80%;
+      transform: translateX(-10%);
+    }
+    @include lg {
+      width: 50%;
+    }
+  }
+}

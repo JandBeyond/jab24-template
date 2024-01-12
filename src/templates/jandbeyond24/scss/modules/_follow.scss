@@ -1,0 +1,15 @@
+@include critical(false) {
+  .follow {
+    text-align: right;
+    margin: 2rem 0;
+    a {
+      text-decoration: none;
+    }
+    svg {
+      fill: $jab_primary;
+      &:hover {
+        fill: $jab_secondary;
+      }
+    }
+  }
+}

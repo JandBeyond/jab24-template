@@ -1,0 +1,37 @@
+// Breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1280px;
+
+// Large tablets and desktops
+$screen-xxl-min: 1480px;
+
+// Mixins
+
+@mixin font_smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Colors
+
+$jab_primary: #1B21F4;
+$jab_secondary: #5FFFD3;
+$jab_tertiary: #E8E8FD;
+$jab_textcolor: #373737;
+$jab_red: #FF2424;
+
+// Typography
+
+$jab_basefont: 'Saira', sans-serif;
+
+// Utility

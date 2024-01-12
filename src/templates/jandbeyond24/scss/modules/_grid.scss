@@ -1,0 +1,55 @@
+@include critical(true) {
+  .grid {
+    display: grid;
+    grid-gap: 1rem;
+    .featurecard {
+      margin-bottom: 0;
+    }
+    &--col2 {
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include lg {
+        grid-gap: 4rem;
+      }
+    }
+    &--col3 {
+      @include lg {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem
+      }
+      @include xl {
+        grid-gap: 4rem;
+      }
+      @include xxl {
+        grid-gap: 6rem;
+      }
+    }
+    &--col4 {
+      @include lg {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem
+      }
+      @include xl {
+        grid-gap: 3rem
+      }
+      @include xxl {
+        grid-gap: 6rem;
+      }
+    }
+    &--col6 {
+        grid-template-columns: repeat(2, 1fr);
+      @include md {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem
+      }
+      @include lg {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1rem
+      }
+      @include xxl {
+        grid-gap: 6rem;
+      }
+    }
+  }
+}

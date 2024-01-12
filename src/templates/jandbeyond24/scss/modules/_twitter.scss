@@ -1,0 +1,24 @@
+@include critical(false) {
+  .TDB-last-tweet {
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    .TDB-tweet-container {
+      text-align: center !important;
+      &:before {
+        display: block;
+        width: 40px;
+        height: 32px;
+        margin: 0 auto 2rem auto;
+        content: " ";
+        background-image: url('../img/twitter.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

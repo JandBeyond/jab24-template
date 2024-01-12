@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="46px" viewBox="0 0 31 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 0.5 31 0.5 31 45.5 0 45.5"></polygon>
+    </defs>
+    <g id="HOME-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="JAB20-Home-Mobile" transform="translate(-191.000000, -1711.000000)">
+            <g id="ABOUT" transform="translate(-317.000000, 1258.000000)">
+                <g id="BIG-BUTTON-Banners" transform="translate(393.000000, 442.000000)">
+                    <g id="Group-3" transform="translate(115.000000, 11.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M31,30.3157143 C31,38.7011429 24.0597798,45.5 15.5,45.5 C6.93890771,45.5 0,38.7011429 0,30.3157143 C0,19.2727143 15.5,0.5 15.5,0.5 C15.5,0.5 31,18.1682857 31,30.3157143" id="Fill-1" fill="#1B21F4" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

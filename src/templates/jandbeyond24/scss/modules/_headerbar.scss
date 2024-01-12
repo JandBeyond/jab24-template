@@ -1,0 +1,97 @@
+@include critical(true) {
+  .header__headerbar {
+    background: $jab_primary;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 70px;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -ms-flex-align: center;
+    @include lg {
+      height: 85px;
+    }
+    @include xxl {
+      padding: .75rem calc((100vw - (#{$screen-xxl-min} - 80px)) / 2);
+    }
+    &:after {
+      display: block;
+      content: " ";
+      height: 29px;
+      width: 100%;
+      background-color: transparent;
+      background-image: url('/templates/jandbeyond20/img/wave.svg');
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      top: calc(100% - 19px);
+    }
+    .headerbar__logolink {
+      position: fixed;
+      display: block;
+      z-index: 10000;
+      top: 55px;
+      left: 1.5rem;
+      padding: 0;
+      transition: transform .35s cubic-bezier(0.750, -0.310, 0.235, 1.290);
+      transform-origin: center top;
+      img {
+        display: block;
+        width: auto;
+        height: 160px;
+        @include md {
+          height: 190px;
+        }
+        @include lg {
+          height: 230px;
+        }
+      }
+      @include md {
+        left: 3rem
+      }
+      @include xxl {
+        left: calc((100vw - (#{$screen-xxl-min} - 80px)) / 2);
+      }
+    }
+    .headerbar__navtoggler {
+      height: 100%;
+      background: transparent;
+      font-size: .9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0;
+      cursor: pointer;
+      z-index: 100002;
+      @include lg {
+        display: none
+      }
+    }
+    .headerbar__quickbuy {
+      transform: translateY(-.75rem);
+      align-self: start;
+      -ms-flex-item-align: flex-start;
+      padding: 1rem;
+      z-index: 100002;
+      img {
+        height: 1rem;
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+  .body--isscrolled {
+    .headerbar__logolink {
+      transform: scale(.5);
+    }
+  }
+}

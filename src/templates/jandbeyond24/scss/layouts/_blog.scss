@@ -1,0 +1,18 @@
+@include critical(true) {
+  .blog {
+    padding-bottom: 4rem;
+    .item {
+      max-width: 960px;
+      .page-header h1,
+      .page-header h2 {
+        font-size: 2.25rem;
+      }
+      @include md {
+        padding-left: 4em;
+        h1,h2,h3,h4,h5,h6 {
+          transform: translateX(-4rem);
+        }
+      }
+    }
+  }
+}

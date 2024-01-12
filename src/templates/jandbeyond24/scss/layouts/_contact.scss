@@ -1,0 +1,19 @@
+@include critical(true) {
+  fieldset {
+    border: 0px;
+    padding: 2rem 0;
+  }
+  .contact-form {
+    legend {
+      display: none;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 1.5rem;
+      max-width: 560px;
+    }
+  }
+  .popover {
+    display: none !important;
+  }
+}
